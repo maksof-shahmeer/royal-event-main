@@ -1,0 +1,369 @@
+<nz-content>
+  <div class="hero-section" id="home">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <div class="img-box">
+              <img src="../../assets/images/hero1.jpg" />
+            </div>
+            <div class="description-box">
+              <h1>WELCOME TO ROYAL EVENTS</h1>
+              <p>
+                We provide Stylish and Unique designs, professional service
+                and attention to details are the key objectives of our
+                company.
+              </p>
+              <button [routerLink]="['/service']" [queryParams]="{id:1}">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <div class="img-box">
+              <img src="../../assets/images/hero3.jpg" />
+            </div>
+            <div class="description-box">
+              <h1>FRESH FLOWER MANDAPS</h1>
+              <p>
+                We offer fresh and vibrant variety of flowers Where you can smell happiness!
+              </p>
+              <button [routerLink]="['/service']" [queryParams]="{id:1}">Discover More</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <div class="img-box">
+              <img src="../../assets/images/hero2.jpg" />
+            </div>
+            <div class="description-box">
+              <h1>WELCOME TO ROYAL EVENTS</h1>
+              <p>
+                We provide Stylish and Unique designs, professional service
+                and attention to details are the key objectives of our
+                company.
+              </p>
+              <button [routerLink]="['/service']" [queryParams]="{id:1}">Discover More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <div class="meet-your-planer" id="aboutUs">
+    <div class="content">
+      <div class="row mx-0 align-items-center">
+        <div class="col-lg-6 col-12">
+          <div class="wpo-about-wrap">
+            <div class="wpo-about-item">
+              <div class="wpo-about-img">
+                <img class="img-fluid" src="../../assets/images/planerModle.jpg" alt="">
+              </div>
+            </div>
+            <div class="about-single-item">
+              <div class="wpo-about-item-s2 wow rollIn" data-wow-duration="2s"
+                style="visibility: visible; animation-duration: 2s; animation-name: rollIn;">
+                <div class="wpo-about-img">
+                  <img class="img-fluid" src="../../assets/images/planerModle.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="ab-shape">
+              <img class="img-fluid" src="../../assets/images/shapeThumb.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="detail-box">
+            <div class="thumb-img">
+              <img src="../../assets/images/thumb.png" />
+            </div>
+            <div class="details">
+              <h1>Royal Events make your event a memory</h1>
+              <p>At Royal Events we are experts in providing stunning solutions to your decorative needs. We design a
+                large variety of wedding mandaps for Indian and Asian style weddings traditional, modern with Stylish,
+                unique designs and a professional service for you wedding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service">
+    <div class="content">
+      <div class="heading">
+        <h2>Our Services</h2>
+        <h1>WHAT WE CAN DO</h1>
+        <div class="iocn-container">
+          <span></span>
+          <img src="../../assets/images/heading1.png " alt="" />
+          <span></span>
+        </div>
+      </div>
+      <div class="row mx-0 justify-content-center">
+        <div class="col-lg-4 col-md-6 col-12" *ngFor="let x of services">
+          <div class="slider-content">
+
+            <div class="description-box" [routerLink]="['/service']" [queryParams]="{id:x.id}">
+              <div class="iocn-container">
+                <span></span>
+                <i class="{{x.icon}}"></i>
+                <span></span>
+              </div>
+              <h1>{{x.title}}</h1>
+              <p>{{x.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="port-folio">
+      <div class="content">
+        <div class="heading">
+          <h1>OUR AMAZING WORK</h1>
+          <div class="iocn-container">
+            <span></span>
+            <img src="../../assets/images/heading.png" alt="" />
+            <span></span>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/1.c9596cf0.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/1">Maria &amp; Robin</a></h4>
+                <span>Austria- Feb 2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/2.eb5ba558.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/2">Rose &amp; Harry</a></h4>
+                <span>Austria- Jan 2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/3.64d484bf.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/3">Aliana &amp; David</a></h4>
+                <span>Austria- Mar 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/4.451bb50b.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/4">Aliza &amp; Ken</a></h4>
+                <span>Austria- Apr 2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/5.a2088aa7.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/5">Michel &amp; Dianee</a></h4>
+                <span>Austria- Jan 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/61.faf89801.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/6">Maria &amp; Nepela</a></h4>
+                <span>Austria- Jun 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 boxes">
+            <div class="img-holder">
+              <img src="https://loveme-react.wpocean.com/static/media/6.d6f3582d.jpg" alt="" />
+              <div class="hover-content">
+                <h4><a href="/project-single/7">Maria &amp; Nevela</a></h4>
+                <span>Austria- Jun 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <div class="client-say" id="clients">
+    <div class="content">
+      <div class="row mx-0 align-items-center">
+        <div class="col-md-5 col-12">
+          <div class="img-box">
+            <img src="../../assets/images/client-site.png" class="frame" />
+            <div class="client-box">
+              <img src="../../assets/images/client.jpg" class="client" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-12">
+          <div class="text-detail">
+            <h1>what your client say</h1>
+            <div class="icon-box">
+              <i class="fa-solid fa-quote-right"></i>
+              <span></span>
+            </div>
+            <div class="swiper client-slider pb-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let x of [1, 2, 3, 4, 5]">
+                  <div class="slider-content">
+                    <div class="description-box">
+                      <p>
+                        This is not only a wedding planning agency but also a
+                        dreamy friend. I am very glad to work with them.They
+                        make my dream come true. In my wedding I found them as
+                        my best friends.
+                      </p>
+                      <div class="client-profile">
+                        <div class="profile-img">
+                          <img src="../../assets/images/profile-image.jpg" />
+                        </div>
+                        <div class="text-detail">
+                          <h2>Jenefer Marvella</h2>
+                          <span>Wedding 12/12/2020</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" meet-your-planer  client-count" id="about">
+        <div class="content">
+      <div class="row mx-0 align-items-end">
+        <div class="col-lg-6 col-12">
+          <div class="detail-box">
+            <div class="thumb-img">
+              <img src="../../assets/images/thumb.png" />
+            </div>
+            <div class="details">
+              <h1>About Royal Events</h1>
+              <p>
+                Royal events were established in 2002 at Tiruvarur, a suburb of Tamilnadu, India named as “chutties
+                events” and started in Melbourne in 2010. The legacy of Royal Events has now been passed on to second
+                generation event planners who have a well established family business in Hyderabad (India) started in
+                early 70's and continue with a passion to serve in event décor field keeping our South East Asian
+                traditions alive.</p><p>
+  
+                Here at royal events we offer a service equal to none and pride ourselves on the attention we offer to all
+                our clients whatever the occasion making your event a memory.</p><p>
+  
+                Stylish and unique designs, professional service and attention to detail are the key objectives of our
+                company. Those core fundamentals have helped us to grow over the years to be in the industry’s most
+                reputable décor service and mandaps provider. We serve for all events; weddings,birthdays,corporate events
+                and any special occasions…whatever the occasion we offer that little extra special glitz to make your
+                event truly memorable. Our aim as a market leading company to offer you our expertise in creating
+                stunning, innovative designs all at affordable prices.</p><p>
+  
+                Make your event one to remember visit us or browse through the website for the Australia’s premiere
+                special events, traditional and latest stage décor service providers."
+  
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="img-box">
+            <img class="img-fluid" src="../../assets/images/planer2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--  <div class="img-shape left">
+        <img src="../../assets/images/shape.png" />
+      </div>
+      <div class="counter-container">
+        <div class="row mx-0">
+          <div class="col-12 detail-box">
+            <h1 class="counter">About us</h1>
+          </div>
+        </div>
+      </div>
+      <div class="img-shape right">
+        <img src="../../assets/images/shape2.png" />
+      </div>
+    </div>
+  </div> -->
+  <div class="conatc-us" id="contactUs">
+    <div class="content">
+      <div class="heading">
+        <h1>Have Any Question?</h1>
+        <p>
+          It is a long established fact that a reader will be distracted
+          content of a page when looking.
+        </p>
+      </div>
+      <form class="card" [formGroup]="form" (ngSubmit)="submitForm()" *ngIf="form">
+        <div class="row mx-0">
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <nz-form-control nzErrorTip="Please input your frist name!">
+                  <input formControlName="fname" nz-input placeholder="First Name" />
+              </nz-form-control>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <nz-form-control nzErrorTip="Please input your last name!">
+                  <input formControlName="lname" nz-input placeholder="Last Name" />
+              </nz-form-control>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <nz-form-control nzErrorTip="Please input your email!">
+                  <input formControlName="email" nz-input placeholder="E-mail" />
+              </nz-form-control>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-box">
+              <nz-form-control nzErrorTip="Please select service!">
+                  <nz-select formControlName="service" nzPlaceHolder="Select Service">
+                    <nz-option [nzValue]="x.title" [nzLabel]="x.title" *ngFor="let x of services"></nz-option>
+                  </nz-select>
+              </nz-form-control>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-box">
+              <nz-form-control>
+                  <textarea  formControlName="message" nz-input placeholder="Controlled autosize" [nzAutosize]="{ minRows: 7, maxRows: 7 }"></textarea>
+              </nz-form-control>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-box text-center">
+              <nz-form-item nz-row class="register-area">
+                <nz-form-control [nzSpan]="14" [nzOffset]="6">
+                  <button  type="submit">Send</button>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</nz-content>

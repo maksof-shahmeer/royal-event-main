@@ -1,0 +1,63 @@
+<!-- <nz-header nzBreakpoint="md" class="sub-header desktop">
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+        <li nz-menu-item class="ps-0">
+            <i class="fa-solid fa-envelope"></i> royalevents.vic@gmail.com
+        </li>
+        <li nz-menu-item>
+            <i class="fa-solid fa-phone"></i> +61 47 849 6969
+        </li>
+        <li nz-menu-item>
+            <i class="fa-solid fa-location"></i>Dallas, Melbourne
+        </li>
+    </ul>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+        <li nz-menu-item><i class="fa-brands fa-facebook-f"></i></li>
+        <li nz-menu-item><i class="fa-brands fa-twitter"></i></li>
+        <li nz-menu-item><i class="fa-brands fa-instagram"></i></li>
+        <li nz-menu-item><i class="fa-brands fa-linkedin-in"></i></li>
+        <li nz-menu-item><i class="fa-brands fa-pinterest-p"></i></li>
+        <li nz-menu-item><i class="fa-brands fa-youtube"></i></li>
+    </ul>
+</nz-header> -->
+<nz-header nzBreakpoint="md" class="main-header" style="flex-direction: row; align-items: center;" [ngClass]="{'active': checkScollTop > 100}">
+    <div class="logo" [routerLink]="['/']">
+        <img src="../../../assets/images/royal-logo.png" class="img-fluid" width="100px">
+    </div>
+    <button nz-button nzType="primary" (click)="open()" class="mobile"><i class="fas fa-bars"></i></button>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal" class="desktop">
+        <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#home'" [ngxScrollToOffset]="-150" [ngClass]="{'active': currentTab == 'home'}" (click)="currentMenu('home')">Home</li>
+        <li nz-menu-item [routerLink]="['/service']" [ngClass]="{'active': currentTab == 'service'}" (click)="currentMenu('service')">Services</li>
+        <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#about'" [ngxScrollToOffset]="-150" [ngClass]="{'active': currentTab == 'about'}" (click)="currentMenu('about')">About us</li>
+        <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#contactUs'" [ngxScrollToOffset]="-150"  [ngClass]="{'active': currentTab == 'contact'}" (click)="currentMenu('contact')">Contact us</li>
+    </ul>
+</nz-header>
+
+<div class="mobile-header" [ngClass]="{'active': visible}">
+    <div class="main-header">
+        <div class="logo" [routerLink]="['/']">
+            <img src="../../../assets/images/royal-logo.png" class="img-fluid" width="100px">
+        </div>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+            <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#home'" [ngxScrollToOffset]="-150" [ngClass]="{'active': currentTab == 'home'}" (click)="currentMenu('home')">Home</li>
+        <li nz-menu-item [routerLink]="['/service']" [ngClass]="{'active': currentTab == 'service'}" (click)="currentMenu('service')">Services</li>
+        <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#about'" [ngxScrollToOffset]="-150" [ngClass]="{'active': currentTab == 'about'}" (click)="currentMenu('about')">About us</li>
+        <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#contactUs'" [ngxScrollToOffset]="-150"  [ngClass]="{'active': currentTab == 'contact'}" (click)="currentMenu('contact')">Contact us</li>
+        </ul>
+    </div>
+    <div class="sub-header">
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+            <li nz-menu-item> <i class="fa-solid fa-envelope"></i> example@mail.com</li>
+            <li nz-menu-item><i class="fa-solid fa-phone"></i> +0088 (021) 111132</li>
+            <li nz-menu-item><i class="fa-solid fa-location"></i> Texas 105 fisrt avenu</li>
+        </ul>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal" style="flex-direction: row;">
+            <li nz-menu-item><i class="fa-brands fa-facebook-f"></i></li>
+            <li nz-menu-item><i class="fa-brands fa-twitter"></i></li>
+            <li nz-menu-item><i class="fa-brands fa-instagram"></i></li>
+            <li nz-menu-item><i class="fa-brands fa-linkedin-in"></i></li>
+            <li nz-menu-item><i class="fa-brands fa-pinterest-p"></i></li>
+            <li nz-menu-item><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+</div>
+<div class="mobile-overlay" [ngClass]="{'active': visible}" (click)="open()"></div>

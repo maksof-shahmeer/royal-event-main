@@ -1,0 +1,92 @@
+<nz-footer class="main-footer">
+    <div class="content">
+      <div class="row mx-0">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="detail-section">
+            <div class="logo">
+              <img src="../../../assets/images/royal-logo.png" class="img-fluid" width="200px">
+            </div>
+            <p>
+              Welcome and open yourself to your truest love this year with us!
+            </p>
+            <ul class="socail-icon">
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <!-- <li><i class="fa-brands fa-linkedin-in"></i></li>
+              <li><i class="fa-brands fa-pinterest-p"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="detail-section">
+            <div class="title">
+              <h1>Menus</h1>
+            </div>
+            <ul nz-menu nzTheme="dark" nzMode="horizontal">
+              <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#home'"  [ngxScrollToOffset]="-150">Home</li>
+              <li nz-menu-item [routerLink]="['/service']">Services</li>
+              <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#about'" [ngxScrollToOffset]="-150">About us</li>
+              <li nz-menu-item [routerLink]="['/']" [ngxScrollTo]="'#contactUs'" [ngxScrollToOffset]="-150">Contact us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="detail-section">
+            <div class="title">
+              <h1>Contact us</h1>
+            </div>
+            <p>
+              We provide Stylish and Unique designs, professional service
+              and attention to details are the key objectives of our
+              company.
+            </p>
+            <ul nz-menu nzTheme="dark" nzMode="horizontal">
+              <li nz-menu-item class="ps-0">
+                <i class="fa-solid fa-envelope"></i> royalevents.vic@gmail.com
+              </li>
+              <li nz-menu-item>
+                <i class="fa-solid fa-phone"></i> +61 47 849 6969  
+              </li>
+              <li nz-menu-item>
+                <i class="fa-solid fa-location"></i>Dallas, Melbourne
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="detail-section">
+            <div class="title">
+              <h1>Instagram</h1>
+            </div>
+            <ul class="Instagram-content">
+              <li>
+                <a href="*"><img src="../../assets/images/profile-image.jpg" alt="" class="img-fluid" /></a>
+              </li>
+              <li>
+                <a href="*"><img src="../../assets/images/client.jpg" alt="" class="img-fluid" /></a>
+              </li>
+              <li>
+                <a href="*"><img src="../../assets/images/dining.jpg" alt="" class="img-fluid" /></a>
+              </li>
+              <li>
+                <a href="*"><img src="../../assets/images/photograph.jpg" alt="" class="img-fluid" /></a>
+              </li>
+              <li>
+                <a href="*"><img src="../../assets/images/guest-list.jpg" alt="" class="img-fluid" /></a>
+              </li>
+              <li>
+                <a href="*"><img src="../../assets/images/weddsing.jpg" alt="" class="img-fluid" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nz-footer>
+  <nz-footer class="sub-footer">
+    <div class="content">
+      <h1>Copyright © {{currentDate}} all right reserved royal events, design and development by easesoultions.com</h1>
+    </div>
+  </nz-footer>
