@@ -1,5 +1,6 @@
 const express = require("express");
-const app = express();
+const app = express()
+const axios = require('axios')
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 app.get(`/api/currencies`, async (req, res) => {
