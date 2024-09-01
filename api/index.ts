@@ -1,6 +1,13 @@
 const express = require("express");
 const app = express()
 const axios = require('axios')
+const cors = require('cors')
+
+const corsOptions = {
+    origin: '*',
+    credentials: true
+  };
+  app.use(cors(corsOptions));
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 app.get(`/api/currencies`, async (req, res) => {
