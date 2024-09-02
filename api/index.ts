@@ -11,7 +11,7 @@ const corsOptions = {
 app.get("/", (req, res) => res.send("Express on Vercel"));
 app.get(`/api/currencies`, async (req, res) => {
     try {
-      const response = await axios.get(`https://api.freecurrencyapi.com/v1/latest?apikey=4E0VK7BnkdeUuh1vegAt808v2IUjzUR6lxcvBMT2`);
+      const response = await axios.get(`https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_v6nMdL7IHOxmQ8gglpalVdKSinmQG0HiOwMCbyUY`);
       const data = await response.data;
       res.json(data);
     } catch (error) {
